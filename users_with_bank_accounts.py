@@ -24,14 +24,6 @@ class User:
     def __init__(self, name):
         self.name = name
         self.account = BankAccount(0,0)
-    
-    def make_deposit(self, amount):
-        self.account.deposit += amount
-        return self
-    
-    def make_withdrawl(self, amount):
-        self.account.withdraw -= amount
-        return self
     def display_balance(self):
         print("User: " + self.name, " Balance: " + str(self.account.balance))
         return self
